@@ -1,8 +1,79 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Running the Project Locally with `json-server`
 
-Currently, two official plugins are available:
+To run this project on a local server with `json-server`, follow these steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone the Repository**:
+
+   ```sh
+   git clone <repository-url>
+   cd TanStackPractice
+   ```
+
+2. **Install Dependencies**:
+
+   ```sh
+   npm install
+   ```
+
+3. **Go to `src/my-api/data.json` File**:
+   Cut the Tags data at the end of the file:
+
+   ```json
+   {
+     "posts": [
+       //Above data
+     ],
+     //Cut data From Below
+     "tags": [
+       "classic",
+       "crime",
+       "english",
+       "fiction",
+       "french",
+       "history",
+       "love",
+       "magical",
+       "mystery"
+     ]
+   }
+   ```
+
+4. **Run `json-server`**:
+
+   ```sh
+   json-server src/my-api/data.json --port 5000
+   ```
+
+5. **Again go to `src/my-api/data.json` File**:
+   Now Paste the Tags data at the end of the file
+
+   ```json
+   {
+     "posts": [
+       //Above data
+     ],
+     //Paste Here
+     "tags": [
+       "classic",
+       "crime",
+       "english",
+       "fiction",
+       "french",
+       "history",
+       "love",
+       "magical",
+       "mystery"
+     ]
+   }
+   ```
+
+   The Json-Server will now have two different mock APIs
+
+6. **Start the React Application**:
+   ```sh
+   npm run dev
+   ```
+
+Your React application should now be running on `http://localhost:5173` and `json-server` on `http://localhost:5000`.
