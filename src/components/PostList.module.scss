@@ -1,0 +1,113 @@
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  padding: 16px;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.postList {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+.subtitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.postbox {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.posttag {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.tag {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.tag input {
+  margin-right: 5px;
+}
+
+.tag label {
+  font-size: 18px;
+  color: black;
+}
+.postButton {
+  padding: 10px 20px;
+  margin-top: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.postButton:hover {
+  background-color: #0056b3;
+}
+
+//Patgination Component
+.pagination {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 10px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
